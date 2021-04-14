@@ -1,0 +1,50 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="Com.MiteshMyFirstDemoApp.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<f:Form id="FormDisplay354" editable="false">
+							<f:title>
+								<core:Title text="Address"/>
+							</f:title>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4"
+									emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement label="Name">
+											<f:fields>
+												<!--<Text text="{SupplierName}"  id="nameText"/>-->
+												<Input id="nameText1" required="true"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Street">
+											<f:fields>
+												<Text text="{Street} {HouseNumber}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="ZIP Code/City">
+											<f:fields>
+												<Text text="{ZIPCode} {City}"/>
+											</f:fields>
+										</f:FormElement>
+										<f:FormElement label="Country">
+											<f:fields>
+												<Text text="{Country}" id="countryText"/>
+											</f:fields>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</VBox>
+					<Button text="{i18n>Navigate}" type="Emphasized" press="onPressNavigate"/>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

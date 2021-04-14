@@ -1,0 +1,23 @@
+<mvc:View controllerName="Com.MiteshMyFirstDemoApp.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout">
+	<l:VerticalLayout class="sapUiContentPadding" width="100%">
+		<App id ="app">
+			<pages>
+				<Page title="{i18n>title}">
+					<content>
+						<Label text="{i18n>Fname}" labelFor="input-a"/>
+						<Input id="input-a" required="true"/>
+						<Label text="{i18n>Lname}" labelFor="input-a"/>
+						<Input id="input-a1" required="true"/>
+						<Label text="{i18n>Age}" labelFor="input-a"/>
+						<Input id="input-a2" required="true"/>
+						<Button text="{i18n>Submit}" type="Accept" press="onPressSummit"/>
+						<Button text="{i18n>Clear}" type="Reject" press="onPressClear"/>
+						<Button text="{i18n>Navigate}" type="Emphasized" press="onPressNavigate"/>
+						<!--<Button text="ON PRESS" press="onButtonPress"/>-->
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</l:VerticalLayout>
+</mvc:View>
